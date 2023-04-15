@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "declaration": true,
+        "sourceMap": false,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "strictNullChecks": true,
+        "outDir": "./build",
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "@": ["./src/*"]
+        }
+    },
+
+    "include": ["./src", "App.tsx", "App.js"],
+    "exclude": ["node_modules", "build"],
+
+    "extends": "expo/tsconfig.base"
+}
