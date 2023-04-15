@@ -9,13 +9,13 @@
         "strictNullChecks": true,
         "outDir": "./build",
         "rootDir": ".",
-        "baseUrl": ".",
+        "baseUrl": "./src",
         "paths": {
-            "@": ["./src/*"]
+            "@/*": ["*"]
         }
     },
 
-    "include": ["./src", "App.tsx", "App.js"],
+    "include": ["./src/**/*", "App.tsx", "App.js"],
     "exclude": ["node_modules", "build"],
 
     "extends": "expo/tsconfig.base"
